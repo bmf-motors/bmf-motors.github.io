@@ -1,0 +1,734 @@
+/* === BMF MOTORS - Custom Styles === */
+
+/* ---- Top Header ---- */
+.top-header-area {
+    background-color: #f5f7fa !important;
+    color: #131212;
+    font-size: 13px;
+    padding: 10px 0;
+}
+
+.top-header-area .top-header-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.top-header-area .top-header-meta p,
+.top-header-area .top-header-meta a {
+    margin: 0;
+    color: #131212;
+    text-transform: none;
+}
+
+.top-header-area .top-header-meta a {
+    text-decoration: none;
+}
+
+.top-header-area .top-header-meta a:hover {
+    color: #fc5b01;
+}
+
+.top-header-area .top-header-right {
+    justify-content: flex-end;
+}
+
+.top-header-area .top-header-social a {
+    margin-left: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.top-header-area .top-header-social a:hover {
+    color: #fc5b01;
+}
+
+.top-header-area .top-header-meta i {
+    margin-right: 6px;
+    color: #fc5b01;
+}
+
+/* ---- Hero Slider ---- */
+.bmf-hero-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* background-color: #0f0f0f; */
+}
+
+.bmf-hero-slider .carousel-inner {
+    height: 600px;
+}
+
+.bmf-slide {
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Slide 1 : Vidéo TikTok portrait + texte */
+.bmf-slide-video {
+    /* background-color: #0f0f0f; */
+    display: flex !important;
+    align-items: center;
+}
+
+.bmf-slide-video .row {
+    height: 600px;
+    width: 100%;
+    margin: 0;
+}
+
+.bmf-video-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 30px 20px;
+    /* background: linear-gradient(135deg, #111 0%, #1a1a1a 100%); */
+}
+
+.tiktok-frame {
+    position: relative;
+    /* width: 240px;
+    height: 426px;  */
+    width: 340px;
+    height: 526px;
+    background: #000;
+    border-radius: 16px;
+    overflow: hidden;
+    /* box-shadow: 0 20px 60px rgba(0,0,0,0.5); */
+    /* border: 2px solid rgba(255,255,255,0.1); */
+}
+
+.tiktok-frame video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tiktok-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%); */
+    color: #fff;
+    text-align: center;
+}
+
+.tiktok-placeholder .tiktok-icon {
+    font-size: 48px;
+    color: #fc5b01;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.tiktok-placeholder .tiktok-brand {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+}
+
+.tiktok-placeholder .tiktok-handle {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.tiktok-frame .tiktok-play-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 12px;
+    width: 44px;
+    height: 44px;
+    background: #fc5b01;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.bmf-slide-text-col {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    padding: 40px 50px;
+}
+
+.bmf-product-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 0 0 0 20px;
+}
+
+.bmf-product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px 0;
+}
+
+.bmf-product-grid .single-products-catagory {
+    width: 50%;
+    padding: 0 10px 12px;
+}
+
+.bmf-product-grid .single-products-catagory a {
+    min-height: 220px;
+}
+
+.bmf-product-grid .single-products-catagory a img {
+    object-fit: cover;
+    min-height: 220px;
+    border-radius: 16px;
+}
+
+.hero-product-row {
+    margin: 0 -10px 0;
+}
+
+.hero-product-col {
+    padding: 0 10px 12px;
+}
+
+.hero-product-row .single-products-catagory {
+    width: 100%;
+}
+
+.hero-product-row .single-products-catagory a {
+    min-height: 220px;
+}
+
+.hero-product-row .single-products-catagory a img {
+    min-height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 767px) {
+    .hero-product-row .hero-product-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 0;
+    }
+}
+
+.bmf-product-grid .single-products-catagory .hover-content {
+    top: 16px;
+    left: 16px;
+}
+
+.bmf-product-grid .single-products-catagory .line {
+    width: 65px;
+}
+
+.bmf-product-side .single-products-catagory {
+    max-height: none;
+}
+
+.bmf-product-side .single-products-catagory:hover .hover-content p,
+.bmf-product-side .single-products-catagory:hover .hover-content h4,
+.bmf-product-side .single-products-catagory:focus .hover-content p,
+.bmf-product-side .single-products-catagory:focus .hover-content h4 {
+    color: #fff;
+}
+
+.bmf-product-side .single-products-catagory .hover-content h4 {
+    font-size: 16px;
+}
+
+.bmf-product-side .single-products-catagory .hover-content p {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.bmf-product-side .single-products-catagory a::after {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.hero-product-row {
+    margin: 0 -10px 0;
+}
+
+.hero-product-col {
+    padding: 0 10px 12px;
+}
+
+.hero-product-row .single-products-catagory {
+    width: 100%;
+}
+
+.hero-product-row .single-products-catagory a {
+    min-height: 220px;
+}
+
+.hero-product-row .single-products-catagory a img {
+    min-height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 767px) {
+    .hero-product-row .hero-product-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 0;
+    }
+}
+
+.bmf-about-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 32px;
+    border-radius: 18px;
+}
+
+.bmf-about-box h6 {
+    font-size: 18px;
+    margin-bottom: 14px;
+    color: #fff;
+}
+
+.bmf-about-box p {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.bmf-benefits-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bmf-benefits-list li {
+    color: rgba(255, 255, 255, 0.82);
+    margin-bottom: 14px;
+    position: relative;
+    padding-left: 24px;
+}
+
+.bmf-benefits-list li::before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fc5b01;
+}
+
+.bmf-slide-text-inner h1 {
+    font-size: 42px;
+    line-height: 1.15;
+    color: #fff;
+    font-family: 'helveticaneuebold', sans-serif;
+    margin-bottom: 18px;
+}
+
+.bmf-slide-text-inner h1 span {
+    color: #fc5b01;
+}
+
+.bmf-slide-text-inner .slide-desc {
+    color: #131212;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 32px;
+    max-width: 420px;
+}
+
+.bmf-slide-text-inner .amado-btn {
+    min-width: 180px;
+}
+
+.bmf-product-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.bmf-product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+}
+
+.bmf-product-card {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    min-height: 150px;
+    border-radius: 18px;
+    background: #111;
+    text-decoration: none;
+    color: #fff;
+}
+
+.bmf-product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.bmf-product-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.6) 100%);
+    transition: background 0.3s ease;
+}
+
+.bmf-product-card:hover img {
+    transform: scale(1.05);
+}
+
+.bmf-product-card:hover::after {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.75) 100%);
+}
+
+.product-card-info {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    z-index: 2;
+}
+
+.product-card-price {
+    margin: 0 0 6px;
+    color: #ffd05b;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.product-card-name {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.bmf-product-footer {
+    margin-top: 24px;
+}
+
+.bmf-product-footer .amado-btn {
+    min-width: auto;
+    padding: 10px 28px;
+}
+
+.tiktok-frame {
+    cursor: pointer;
+}
+
+/* Slides images */
+.bmf-slide-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bmf-slide-img .slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.bmf-slide-img .slide-caption {
+    position: absolute;
+    bottom: 80px;
+    left: 60px;
+    z-index: 2;
+}
+
+.bmf-slide-img .slide-caption .badge-label {
+    display: inline-block;
+    /* background-color: #fc5b01; */
+    color: #6d6d6d;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 16px;
+    margin-bottom: 16px;
+}
+
+.bmf-slide-img .slide-caption h2 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 12px;
+    font-family: 'helveticaneuebold', sans-serif;
+}
+
+.bmf-slide-img .slide-caption p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+    margin-bottom: 24px;
+    max-width: 400px;
+}
+
+/* Slider controls */
+.bmf-hero-slider .carousel-control-prev,
+.bmf-hero-slider .carousel-control-next {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(252, 91, 1, 0.85);
+    bottom: 20px;
+    top: auto;
+    transform: none;
+    border-radius: 0;
+    opacity: 1;
+    transition: background-color 0.3s;
+}
+
+.bmf-hero-slider .carousel-control-prev {
+    left: auto;
+    right: 80px;
+}
+
+.bmf-hero-slider .carousel-control-next {
+    right: 20px;
+}
+
+.bmf-hero-slider .carousel-control-prev:hover,
+.bmf-hero-slider .carousel-control-next:hover {
+    background-color: #131212;
+}
+
+.bmf-hero-slider .carousel-indicators {
+    bottom: 20px;
+}
+
+.bmf-hero-slider .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.45);
+    border: none;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.bmf-hero-slider .carousel-indicators li.active {
+    background-color: #fc5b01;
+    width: 28px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+    /* Cache la barre du haut (tél/réseaux) pour laisser toute la place à la vidéo */
+    .top-header-area {
+        display: none;
+    }
+
+    .bmf-hero-slider .carousel-inner {
+        height: auto;
+    }
+
+    .bmf-slide {
+        height: auto;
+    }
+
+    .bmf-slide-video .row {
+        height: auto;
+    }
+
+    .bmf-video-col {
+        height: calc(100vh - 70px);
+        padding: 0;
+    }
+
+    .tiktok-frame {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .bmf-slide-text-col {
+        padding: 30px 20px;
+    }
+
+    .bmf-slide-text-inner h1 {
+        font-size: 26px;
+    }
+
+    .bmf-slide-img {
+        height: 380px;
+    }
+
+    .bmf-slide-img .slide-caption {
+        left: 25px;
+        bottom: 40px;
+    }
+
+    .bmf-slide-img .slide-caption h2 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .bmf-slide-text-inner h1 {
+        font-size: 30px;
+    }
+
+    .bmf-slide-text-col {
+        padding: 30px 25px;
+    }
+}
+
+/* ---- Footer 4 colonnes ---- */
+.footer_area {
+    position: relative;
+    background-color: rgba(60, 60, 60, 0.97) !important;
+    padding: 70px 0 0 !important;
+}
+
+.footer-widget-col {
+    margin-bottom: 40px;
+}
+
+.footer-brand-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: 'helveticaneuebold', sans-serif;
+    margin-bottom: 18px;
+    line-height: 1;
+}
+
+.footer-brand-name span {
+    color: #fc5b01;
+}
+
+.footer-about-text {
+    color: rgba(255, 255, 255, 0.55) !important;
+    font-size: 14px !important;
+    line-height: 1.9 !important;
+    margin-bottom: 24px;
+}
+
+.footer-social-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 15px !important;
+    transition: all 0.3s ease;
+}
+
+.footer-social-links a:hover {
+    background-color: #fc5b01;
+    border-color: #fc5b01;
+    color: #fff !important;
+    transform: translateY(-2px);
+}
+
+.footer-widget-title {
+    color: #ffffff !important;
+    font-size: 13px !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-widget-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #fc5b01;
+}
+
+.footer-links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links-list li {
+    margin-bottom: 11px;
+}
+
+.footer-links-list li a {
+    color: rgba(255, 255, 255, 0.55) !important;
+    font-size: 14px !important;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links-list li a:hover {
+    color: #fc5b01 !important;
+    padding-left: 6px;
+}
+
+.footer-bottom-bar {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 22px 0;
+    margin-top: 10px;
+}
+
+.footer-copyright-text {
+    color: rgba(255, 255, 255, 0.35) !important;
+    font-size: 12px !important;
+    margin: 0;
+}
+
+.footer-bottom-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.footer-bottom-links li a {
+    color: rgba(255, 255, 255, 0.35) !important;
+    font-size: 12px !important;
+    transition: color 0.3s;
+}
+
+.footer-bottom-links li a:hover {
+    color: #fc5b01 !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .footer-bottom-links {
+        justify-content: flex-start;
+        margin-top: 8px;
+    }
+}
+
+/* ---- Sidebar button labels update ---- */
+.amado-btn-group .amado-btn {
+    text-align: center;
+}
